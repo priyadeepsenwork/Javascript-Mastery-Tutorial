@@ -77,19 +77,21 @@ console.log(typeof age2)
 
 //objects are used to store collections of data in a more complex entity
 
-
 const name5 = 'John'
 const age5 = 25
+const email = 'john@gmail.com'
 
 const person = {
     name: 'John',
     age: 25,
+    email: 'john@gmail.com'
 }
 
 console.log(typeof person)
 
 console.log("Below are variables extracted from object person : name and age")
 console.log("Name : " + person.name + ", Age: " + person.age )
+console.log(`Email: ${person.email}`)
 
 
 

@@ -78,18 +78,31 @@ names.unshift(`John`);
 //!Slice() AND Splice() == Dangerous!!
 
 //splice()
+/*
+The splice() method of Array instances changes the contents of an array by
+removing or replacing existing elements and/or adding new elements in place.
+
+splice(start, deleteCount, item1, item2, item3...... itemN)
+*/
+console.log(`SPLICE().\nBefore: ${names}`)
 names.splice(2, 0, `Lucy`, `Johnny`);
-//console.log(names);
+console.log(`After : ${names}`);
 
 //slice()
+/*
+The slice() method of Array instances returns a shallow copy of a portion of an
+array into a new array object selected from start to end (end not included) where
+start and end represent the index of items in that array. The original array will
+not be modified.
+ */
 const John = names.slice(0, 1);
-//console.log(John)
+console.log(John)
 
 //bro, check video no. 50, array methods
 //its f*cking long, but easy to understand
 
 for (let i = 0; i < n; i++) {
-  //console.log(i, names[i])
+  console.log(i, names[i])
 }
 
 //?forEach() method
@@ -103,7 +116,7 @@ const logTheName = (name, index) => {
 };
 
 const result = names.forEach(logTheName);
-//console.log(result)
+console.log(result)
 //output: undefined
 //! forEach() always returns undefined!
 
@@ -136,7 +149,7 @@ const inventory = [
   { price: 3, name: "Bread" },
   { price: 5, name: "Oil" },
 ];
-
+console.log(inventory)
 //Array map
 //maps returns an object of type array..
 

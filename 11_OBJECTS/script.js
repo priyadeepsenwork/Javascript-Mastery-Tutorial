@@ -38,7 +38,7 @@ const person = {
 console.log(person.Subjects)
 */
 
-/*
+
 const dog = {
   name: `Fluffy`,
   age: 4,
@@ -46,9 +46,10 @@ const dog = {
      return (`Woof Woof!`)
   },
 
-  ! this keyword
+  //! this keyword ... will be asked in the interview
   display: function() {
-    ? this keyword points to the object dog where it is residing
+    //? this keyword points to the object dog where it is residing
+    //? literally replace this with the function name, where this code is residing....
     console.log(this.name)
     console.log(this.age)
     console.log(this.Bark())
@@ -57,12 +58,12 @@ const dog = {
 
 console.log(dog.age)
 dog.Bark() 
-calling the function  from the object
+//calling the function  from the object
 
-? Here, we are calling the function display()
+//? Here, we are calling the function display()
 dog.display()
 
-*/
+
 
 //? Object.keys() creates an array containing the keys of an object
 
